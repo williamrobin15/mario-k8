@@ -1,7 +1,7 @@
 
-#  Deploying Super Mario on Kubernetes
+#  Deploying Mario on Kubernetes
 
-Mario is a classic game loved by many. In this guide, we'll explore how to deploy a Super Mario game on Amazon's Elastic Kubernetes Service (EKS). Utilizing Kubernetes, we can orchestrate the game's deployment on AWS EKS, allowing for scalability, reliability, and easy management
+Mario is a classic game loved by many. In this guide, we'll explore how to deploy a Childhood Mario game on Amazon's Elastic Kubernetes Service (EKS). Utilizing Kubernetes, we can orchestrate the game's deployment on AWS EKS, allowing for scalability, reliability, and easy management
 
 ## Deployment
 #### Step 1. Launch Ubuntu instance
@@ -20,7 +20,7 @@ git clone https://github.com/williamrobin15/mario-k8.git
 Change the directory
 
 ```
-cd supermario-k8s
+cd mario-k8
 ```
 
 Provide the executable permission to script.sh file, and run it.
@@ -41,13 +41,13 @@ Check versions:
 
 `terraform --version`
 
-Now change directory into the EKS-TF
+Now change directory into the Terraform
 
 Run Terraform init
 
 NOTE: Don’t forgot to change the s3 bucket name in the backend.tf file
 
-`cd EKS-TF`
+`cd Terraform`
 
 `terraform init`
 
