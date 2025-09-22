@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mario-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mario
+  template:
+    metadata:
+      labels:
+        app: mario
+    spec:
+      containers:
+      - name: mario-game
+        image: robinw15/marioapp
+        ports:
+        - containerPort: 80
